@@ -5,15 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tyxie-portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header class="headerpage"></header>
+    <main class="main">
+        <section class="box">
+            <p class="introduction">
+                I'm a lifelong enthusiast of traveling, exploring the wonders of both the real world and the digital realm.
+            </p>
+            <a href="#" class="button">View Resume</a>
+        </section>
+        <section class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="src/hawaii.jpg" alt="" class="image" />
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="src/zion.jpg" alt="" class="image" />
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="src/bahama.jpg" alt="" class="image" />
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="src/cuba.jpg" alt="" class="image" />
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="src/chongqing.jpg" alt="" class="image" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+    </main>
     <footer class="footerpage"></footer>
     <script src="script.js"></script>
     <script src="header.js"></script>
     <script src="footer.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+          },
+          autoplay: {
+                delay: 5000,
+            },
+        });
+      </script>
 </body>
 </html>
