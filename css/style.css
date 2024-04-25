@@ -164,21 +164,22 @@ footer {
     position: relative;
 }
 
-.row {
+.footer-row {
     display: flex;
     flex-wrap: wrap;
 }
 
 .footer-col {
-    width: 25%;
+    width: 50%;
     padding: 0 50px;
 }
 
 .footer-col li {
     list-style: none;
+    padding-left: 0;
 }
 
-.container {
+.footer-container {
     max-width: 1170px;
     margin: auto;
     border-top: 2px solid #24262b;
@@ -215,11 +216,11 @@ footer {
     width: 50px;
 }
 
-.footer-col ul li:not(:last-child) {
+.footer-col P:not(:last-child) {
     margin-bottom: 10px;
 }
 
-.footer-col ul li a {
+.footer-col P a {
     font-size: 16px;
     color: #ffffff;
     text-decoration: none;
@@ -229,7 +230,7 @@ footer {
     transition: all 0.3s ease;
 }
 
-.footer-col ul li a:hover {
+.footer-col P a:hover {
     color: black;
     padding-left: 10px;
 }
