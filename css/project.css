@@ -16,7 +16,8 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.5);
-    margin: 30px 20px;
+    justify-content: center;
+    margin: 20px 0px;
 }
 
 .card-pro img {
@@ -50,7 +51,7 @@
 }
 
 .card-pro .card-btn:hover {
-    letter-spacing: 1px;
+    background-color: #666;
 }
 
 .card-pro:hover {

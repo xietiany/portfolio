@@ -320,14 +320,14 @@ footer {
 /* transition */
 .transition-fade {
     opacity: 1;
-    transition: 0.25s;
+    transition: 1s;
 }
 
-html.is-animating .transition-fade {
+html.is-changing .swup-transition-fade {
+    transition: opacity 250ms ease-in-out;
+}
+  
+html.is-animating .swup-transition-fade {
     opacity: 0;
 }
 
-html.is-chaning .transition-fade {
-    transition: opacity 0.25s ease-in-out;
-    opacity: 1;
-}

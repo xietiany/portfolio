@@ -55,7 +55,6 @@ a.button {
     background-color: #C87E4F;
     text-decoration: none;
     margin-top: 25px;
-    transition: all 0.3s ease;
 }
 
 a.button:hover {
