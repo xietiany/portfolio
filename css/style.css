@@ -20,6 +20,10 @@ body {
 
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -32,6 +36,7 @@ p {
 
 
 /* NAV */
+
 nav, 
 .nav-links {
     display: flex;
@@ -51,6 +56,32 @@ nav {
     font-weight: 50;
     font-style: normal;
 }
+
+/*
+nav {
+    background: white;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-family: "Platypi", serif;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+*/
 
 .a-links {
     padding-left: 1rem;
@@ -86,7 +117,7 @@ nav {
 }
 
 /* HAMBURGER MENU */
-
+/*
 #hamburger-nav {
     display: none;
 }
@@ -111,7 +142,12 @@ nav {
     background-color: black;
     transition: all 0.3 ease-in-out;
 }
+*/
+#hamburger-nav {
+    display: none;
+}
 
+/*
 .menu-links {
     position: absolute;
     top: 100%;
@@ -139,7 +175,9 @@ nav {
 .menu-links.open {
     max-height: 300px;
 }
+*/
 
+/*
 .hamburger-icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
 }
@@ -162,6 +200,22 @@ nav {
 
 .hamburger-icon span:first-child{
     transform: none;
+}
+*/
+
+/* New hamburger menu*/
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
 }
 
 /* Footer */
@@ -263,3 +317,17 @@ footer {
     background-color: #ffffff;
 }
 
+/* transition */
+.transition-fade {
+    opacity: 1;
+    transition: 0.25s;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
+html.is-chaning .transition-fade {
+    transition: opacity 0.25s ease-in-out;
+    opacity: 1;
+}

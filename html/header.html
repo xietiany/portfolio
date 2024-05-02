@@ -1,4 +1,4 @@
-<nav id="desktop-nav">
+<nav id="desktop-nav" class="desktop-nav">
     <a href="/index.html" class="logo">Tianyi Xie</a>
     <ul class="nav-links">
         <li><a href="/html/about.html" class="a-links">About</a></li>
@@ -7,19 +7,16 @@
         <li><a href="/src/Tianyi_2024_Citi.pdf" class="a-links">CV</a></li>
     </ul>
 </nav>
-<nav id="hamburger-nav">
+<nav id="hamburger-nav" class="hamburger">
     <a href="/index.html" class="logo">Tianyi Xie</a>
-    <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="/html/about.html" onclick="toggleMenu()" class="a-links">About</a></li>
-            <li><a href="/html/timeline.html" onclick="toggleMenu()" class="a-links">Timeline</a></li>
-            <li><a href="/html/projects.html" onclick="toggleMenu()" class="a-links">Projects</a></li>
-            <li><a href="/src/Tianyi_2024_Citi.pdf" onclick="toggleMenu()" class="a-links">CV</a></li>
-        </div>
-    </div>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </label>
+    <ul class="menu-links">
+        <li><a href="/html/about.html" onclick="toggleMenu()" class="a-links">About</a></li>
+        <li><a href="/html/timeline.html" onclick="toggleMenu()" class="a-links">Timeline</a></li>
+        <li><a href="/html/projects.html" onclick="toggleMenu()" class="a-links">Projects</a></li>
+        <li><a href="/src/Tianyi_2024_Citi.pdf" onclick="toggleMenu()" class="a-links">CV</a></li>
+    </ul>
 </nav>
