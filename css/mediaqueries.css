@@ -1,9 +1,53 @@
-@media screen and (max-width: 1200px) {
+
+@media screen and (max-width: 858px) {
     #desktop-nav {
         display: none;
     }
     #hamburger-nav {
         display: flex;
+    }
+}
+
+@media (max-width:858px) {
+    .checkbtn {
+        display: block;
+    }
+    nav .menu-links {
+        position: absolute;
+        width: 90%;
+        height: 85vh;
+        background: rgb(232, 232, 239);
+        top: 110px;
+        left: 5%;
+        z-index: 2;
+        border-radius: 8px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transition: all .5s;
+    }
+
+    nav, 
+    .menu-links {
+        display: none;
+    }
+
+    nav ul li {
+        margin: 50px 0;
+        line-height: 30px;
+        list-style: none;
+    }
+
+    nav ul li a{ 
+        font-size: 20px;
+        font-family: "Platypi", serif;;
+    }
+    a:hover, a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        display: block;
     }
 }
 
