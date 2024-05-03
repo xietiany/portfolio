@@ -318,7 +318,7 @@ footer {
 }
 
 /* transition */
-.transition-fade {
+.swup-transition-fade {
     opacity: 1;
     transition: 1s;
 }
