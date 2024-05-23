@@ -1,7 +1,5 @@
-(() => {
-    const swup = new Swup({
-        plugins: [new SwupHeadPlugin(),
-                new SwupScriptsPlugin()],
-        containers: ["#swup"]
-    });
-})
+var swup = new Swup({
+    plugins: [new SwupHeadPlugin(),
+            new SwupScriptsPlugin()],
+    containers: ["#swup"]
+});
