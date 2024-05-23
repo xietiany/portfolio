@@ -44,6 +44,52 @@ p {
     margin: auto;
 }
 
+h3 {
+    font-weight: 700;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+}
+
+ul {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+ul.ul-edu li {
+    position: relative;
+    padding: 0 15px 4px 3px;
+}
+
+li {
+    display: list-item;
+}
+
+.fa-li {
+    left: -2em;
+    position: absolute;
+    text-align: center;
+    width: 2em;
+    line-height: inherit;
+}
+
+ul.ul-edu li .description p.course {
+    font-size: .9rem;
+}
+
+ul.ul-edu li .description p {
+    margin: 0;
+}
+
+ul.ul-edu li .description p.institution {
+    font-size: 0.8rem;
+    color: rgba(0,0,0,.6);
+}
+
 @media (max-width: 1200px) {
     .about-container {
         max-width: 960px;
