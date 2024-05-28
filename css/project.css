@@ -39,6 +39,10 @@
     line-height: 1.3;
 }
 
+.card-content .text {
+    height: 100px;
+}
+
 .card-content .card-btn {
     display: inline-block;
     padding: 8px 16px;
