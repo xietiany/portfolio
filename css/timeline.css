@@ -118,7 +118,7 @@ ul.timeline li.active::after {
 }
 
 section {
-    width: 70%;
+    width: 80%;
     margin: auto;
     background-image: linear-gradient(to right, #a29bfe 0%, #ff7675 100%);
     border-radius: 4px;
@@ -233,5 +233,11 @@ section p {
     100% {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 858px) {
+    .box {
+        height: 80vh;
     }
 }
