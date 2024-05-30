@@ -241,3 +241,9 @@ section p {
         height: 80vh;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .box {
+        height: 100vh;
+    }
+}
