@@ -244,6 +244,6 @@ section p {
 
 @media screen and (max-width: 576px) {
     .box {
-        height: 100vh;
+        height: 120vh;
     }
 }
